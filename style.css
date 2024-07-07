@@ -60,6 +60,12 @@ main {
     border-radius: 12px;
 }
 
+@media only screen and (min-width: 375px) {
+    main {
+        padding: 40px;
+    }
+}
+
 .avatar-rounded {
     border-radius: 50%;
     width: 88px;
