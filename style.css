@@ -1,0 +1,112 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --black: hsl(0, 0%, 8%);
+    --white: hsl(0, 0%, 100%);
+
+    --base-font-size: 14px;
+}
+
+/* Utils */
+.grid {
+    display: grid;
+}
+
+.items-center {
+    justify-items: center;
+}
+
+.row-16 {
+    row-gap: 16px;
+}
+
+.row-24 {
+    row-gap: 24px;
+}
+
+/* reset */
+
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--base-font-size);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt"0;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background: var(--black);
+    color: white;
+}
+
+main {
+    padding: 24px;
+    background: var(--dark-grey);
+    border-radius: 12px;
+}
+
+.avatar-rounded {
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    color: var(--green);
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+ul {
+    width: 100%;
+}
+
+li {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+li a {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    background-color: var(--grey);
+    transition: color 0.3s ease-out;
+}
+
+li a:hover {
+    background-color: var(--green);
+    color: var(--grey);
+}
